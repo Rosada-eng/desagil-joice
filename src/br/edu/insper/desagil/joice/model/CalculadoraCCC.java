@@ -1,7 +1,7 @@
 package br.edu.insper.desagil.joice.model;
 
 public class CalculadoraCCC extends Calculadora {
-	private static double constanteCCC = (double) 6*Math.pow(3,0.5) / (6.02* Math.pow(10,2)*64); //0.000269733; // constanteCCC =  (2.3.sqrt(3)) / (Nav . 64. 10^-21) 
+	private static double constanteCCC = (double) 6*Math.pow(3,0.5) / (6.02* Math.pow(10,2)*64); // constanteCCC =  (2.3.sqrt(3)) / (Nav . 64. 10^-21) 
 	
 	public CalculadoraCCC() {
 		super("Cubica de Corpo Centrado");

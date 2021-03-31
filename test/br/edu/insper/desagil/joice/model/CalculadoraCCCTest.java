@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class CalculadoraCCCTest {
 	private CalculadoraCCC calculadoraCCC;
+	private static double DELTA = 0.05;
 	
 	@BeforeEach
 	public void init() {
@@ -18,7 +19,7 @@ class CalculadoraCCCTest {
 		double densidade = calculadoraCCC.calcula(92.91, 0.143);
 		double densidadeEsperada = 8.57;
 		
-		assertEquals(densidadeEsperada, densidade, 0.05);
+		assertEquals(densidadeEsperada, densidade, DELTA);
 		
 	}
 	
@@ -27,7 +28,7 @@ class CalculadoraCCCTest {
 		double densidade = calculadoraCCC.calcula(183.84, 0.137);
 		double densidadeEsperada = 19.28;
 		
-		assertEquals(densidadeEsperada, densidade, 0.05);
+		assertEquals(densidadeEsperada, densidade, DELTA);
 	}
 	
 	@Test
@@ -35,7 +36,7 @@ class CalculadoraCCCTest {
 		double densidade = calculadoraCCC.calcula(6.94, 0.152);
 		double densidadeEsperada = 0.53;
 		
-		assertEquals(densidadeEsperada, densidade, 0.05);
+		assertEquals(densidadeEsperada, densidade, DELTA);
 		
 	}
 }

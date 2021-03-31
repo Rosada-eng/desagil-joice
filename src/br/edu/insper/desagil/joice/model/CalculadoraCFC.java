@@ -6,7 +6,7 @@ public class CalculadoraCFC extends Calculadora {
 
 	public CalculadoraCFC() {
 	super("Cúbica de Face Centrada");
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	@Override
